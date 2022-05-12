@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  background-color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .conteiner {
+    width: 1366px;
+  }
+}
+
+.hero {
+  background-color: aqua;
+}
+
+/* @import './example'; */
+/*# sourceMappingURL=main.css.map */
