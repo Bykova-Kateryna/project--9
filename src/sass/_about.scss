@@ -1,0 +1,102 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.about {
+  @extend %padding-for-section;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+  letter-spacing: 0.03em;
+
+  color: $tittle-color;
+  margin-bottom: 20px;
+}
+
+.about__name {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+
+  color: $tittle-color;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b9b9b9;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about__list {
+  @extend %ul;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+
+  color: $tittle-color;
+
+  margin-bottom: 20px;
+}
+
+.about__icon {
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.about__line {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 164.9%;
+  /* identical to box height, or 33px */
+
+  letter-spacing: 0.08em;
+
+  color: $secondary-color;
+
+  margin-bottom: 8px;
+}
+
+.about__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+
+  color: $primary-color;
+
+  margin-bottom: 8px;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+
+  text-decoration-line: underline;
+
+  color: #ff6b09;
+}

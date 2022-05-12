@@ -38,8 +38,122 @@ img {
   }
 }
 
-.hero {
-  background-color: aqua;
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365) {
+  .about {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .about {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.about__title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 130%;
+  /* or 26px */
+  letter-spacing: 0.03em;
+  color: #111518;
+  margin-bottom: 20px;
+}
+
+.about__name {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08em;
+  color: #111518;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #b9b9b9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  color: #111518;
+  margin-bottom: 20px;
+}
+
+.about__icon {
+  display: inline-block;
+  margin-right: 9px;
+}
+
+.about__line {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 164.9%;
+  /* identical to box height, or 33px */
+  letter-spacing: 0.08em;
+  color: #FF6B09;
+  margin-bottom: 8px;
+}
+
+.about__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* or 167% */
+  color: #B9B9B9;
+  margin-bottom: 8px;
+}
+
+.about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  /* identical to box height, or 167% */
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #ff6b09;
 }
 
 /* @import './example'; */
