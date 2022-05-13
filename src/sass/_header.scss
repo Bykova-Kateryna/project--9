@@ -34,6 +34,12 @@ a {
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: stroke 250ms ease-in;
+
+    &:hover>.header__icon-burger,
+    &:focus>.header__icon-burger {
+        stroke: $secondary-color;
+    }
 }
 
 .header__icon-burger {
@@ -101,6 +107,12 @@ a {
     background: transparent;
     border: none;
     cursor: pointer;
+    transition: stroke 250ms ease-in;
+
+    &:hover>.menu-open__icon-close,
+    &:focus>.menu-open__icon-close {
+        stroke: $secondary-color;
+    }
 }
 
 .menu-open__icon-close {
