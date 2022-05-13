@@ -10,18 +10,15 @@ img{
     height: auto;
 }
 
-.conteiner{
-    margin-left: auto;
-    margin-right: auto;
-    
-    @media screen and (min-width: 480px){
-        width: 480px;
-    }
-    @media screen and (min-width: 768px){
-        width: 768px;
-    }
-    @media screen and (min-width: 1366px){
-        width: 1366px;
-    }
+@mixin button ($width, $height, $bgcolor, $color) {
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    border: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: $color;
 }
-
