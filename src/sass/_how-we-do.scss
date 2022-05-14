@@ -36,12 +36,14 @@
 }
 
 .how-we-do__icon {
+  fill: $secondary-color;
   margin-top: 32px;
   margin-bottom: 20px;
+
+  .how-we-do__item:hover & {
+    fill: $background-color;
+  }
 }
-// .how-we-do__item:hover.how-we-do__icon {
-//   fill: $background-color;
-// }
 
 .how-we-do__list_title {
   font-style: normal;
@@ -52,6 +54,10 @@
   letter-spacing: 0.08em;
   color: $tittle-color;
   margin-bottom: 4px;
+
+  .how-we-do__item:hover & {
+    color: $background-color;
+  }
 }
 
 .how-we-do__text-line {
@@ -65,6 +71,10 @@
   letter-spacing: 0.08em;
   color: $secondary-color;
   margin-bottom: 4px;
+
+  .how-we-do__item:hover & {
+    color: $background-color;
+  }
 }
 
 .how-we-do__text {
@@ -78,4 +88,8 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: $primary-color;
+
+  .how-we-do__item:hover & {
+    color: $background-color;
+  }
 }
