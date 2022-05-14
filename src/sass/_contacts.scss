@@ -1,9 +1,18 @@
-.contacts {
+.contacts{
+    min-width: 320px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #111518;
+}
+.contacts__container {
     color: $background-color;
-    background-size: contain;
-
 }
 
 .contacts__title {
@@ -51,26 +60,10 @@
     }
 }
 
-.contacts__button {
-    width: 280px;
-    height: 48px;
-    background-color: $secondary-color;
-    border: none;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: $background-color;
-
-    margin-top: 40px;
-}
-
 @media screen and (max-width: 767px) {
     .contacts {
-        width: 100vw;
-        padding: 40px 20px;
-        background-size: cover;
+        // width: 480px;
+
         background-image: url(../images/form-bg_mob.png);
     }
         @media (min-device-pixel-ratio: 2),
@@ -81,6 +74,11 @@
                 background-image: url(../images/form-bg@2x_mob.png);
             }
         }
+    
+    .contacts__container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
     .contacts__title {
         margin-bottom: 24px;
@@ -99,9 +97,11 @@
         width: 280px;
         height: 48px;
     }
+    .contacts__button {
+        @include button (280px, 48px, $secondary-color, $background-color);
+        margin-top: 40px;
+    }
 }
-
-@media screen and (min-width: 480px) {}
 
 @media screen and (min-width: 768px) {
     .contacts {
@@ -118,7 +118,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1679px) {
     .contacts {
-        padding: 40px;
+        // width: 768px;
+
         background-image: url(../images/form-bg_tablet.png);
     }
         @media (min-device-pixel-ratio: 2),
@@ -129,6 +130,11 @@
                 background-image: url(../images/form-bg@2x_tablet.png);
             }
         }
+
+    .contacts__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
     .contacts__title {
         font-size: 26px;
@@ -150,12 +156,19 @@
         width: 336px;
         margin-top: 32px;
     }
+    .contacts__button {
+        @include button (335px, 48px, $secondary-color, $background-color);
+        margin-top: 32px;
+    }
 }
 
 @media screen and (min-width: 1680px) {
     .contacts {
         // width: 1680px;
-        padding: 80px 295px;
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
         background-image: url(../images/form-bg_desktop.png);
     }
         @media (min-device-pixel-ratio: 2),
@@ -166,6 +179,11 @@
                 background-image: url(../images/form-bg@2x_desktop.png);
             }
         }
+
+    .contacts__container {
+        padding-left: 295px;
+        padding-right: 295px;
+    }
 
     .contacts__title {
         font-size: 46px;
@@ -193,5 +211,10 @@
     .contacts__button{
         width: 528px;
         height: 70px;
+    }
+    .contacts__button {
+        @include button (528px, 70px, $secondary-color, $background-color);
+        margin-top: 40px;
+        font-size: 14px;
     }
 }
