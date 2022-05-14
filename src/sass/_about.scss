@@ -76,17 +76,18 @@
 .about__list {
     @extend %ul;
     margin-bottom: 60px;
+    margin-left: 26px;
+
+    @media screen and (min-width: 1680px) {
+            margin-left: 60px;
+        }
 }
+
 
 .about__item {
     display: flex;
     align-items: center;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.06em;
-
-    color: $tittle-color;
+    
     
     &:not(:last-child){
         margin-bottom: 20px;
@@ -99,46 +100,76 @@
                 margin-bottom: 30px;
             }
     }
-
-    @media screen and (min-width: 768px) {
-        font-size: 12px;
-        line-height: 15px;
-    }
-
-    @media screen and (min-width: 1680px) {
-        font-size: 16px;
-        line-height: 20px;
-    }
 }
 
-.about__icon {
-    display: inline-block;
-    margin-right: 9px;
+.about__paragraph {
+    position: relative;
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+    
+        color: $tittle-color;
 
-    @media screen and (min-width: 1680px) {
-            margin-right: 34px;
+        @media screen and (min-width: 768px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        
+            @media screen and (min-width: 1680px) {
+                font-size: 16px;
+                line-height: 20px;
+}}
+
+.about__paragraph::before {
+    position: absolute;
+    top: 0;
+    left: -26px;
+    content: "";
+    // content: url(../svg/check.svg);
+    background-image: url(../svg/check.svg);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+        height: 14px;
+    
+    
+        @media screen and (min-width: 1680px) {
+            left: -58px;
+            width: 24px;
+                height: 20px;
         }
 }
 
-// .about__line {
-//     font-weight: 700;
-//     font-size: 20px;
-//     line-height: 164.9%;
-//     /* identical to box height, or 33px */
+.about__thumb{
+    position: relative;
 
-//     letter-spacing: 0.08em;
+    &::before {
+        content: "—";
+        position: absolute;
+        top: -41px;
+        left: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 164.9%;
+        /* identical to box height, or 33px */
+        
+        letter-spacing: 0.08em;
+        
+        color: $secondary-color;
 
-//     color: $secondary-color;
+        @media screen and (min-width: 1680px) {
+            top: -45px;
+        }
+    }
 
-//     margin-bottom: 8px;
-
-//     @media screen and (min-width: 1680px) {
-//             margin-bottom: 12px;
-//         }
-// }
+    & > ul {
+        @extend %ul;
+    }
+}
 
 .about__text {
-    position: relative;
+
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
@@ -159,25 +190,6 @@
         line-height: 28px;
         margin-bottom: 20px;
     }
-}
-
-.about__text::before {
-    content: "—";
-    position: absolute;
-    top: -41px;
-    left: 0;
-    font-weight: 700;
-        font-size: 20px;
-        line-height: 164.9%;
-        /* identical to box height, or 33px */
-    
-        letter-spacing: 0.08em;
-    
-        color: $secondary-color;
-
-        @media screen and (min-width: 1680px) {
-                top: -45px;
-            }
 }
 
 .about__certificate {
