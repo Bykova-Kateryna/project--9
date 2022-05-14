@@ -37,18 +37,14 @@
     }
 }
 
-.about__picture {
-    width: 100%;
-
-    
-}
-
 .about__description {
     @media screen and (min-width: 768px) {
+        width: 400px;
             margin-left: 60px;
         }
     
         @media screen and (min-width: 1680px) {
+            width: 668px;
             margin-left: 172px;
         }
 }
@@ -79,7 +75,7 @@
 
 .about__list {
     @extend %ul;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
 .about__item {
@@ -124,24 +120,25 @@
         }
 }
 
-.about__line {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 164.9%;
-    /* identical to box height, or 33px */
+// .about__line {
+//     font-weight: 700;
+//     font-size: 20px;
+//     line-height: 164.9%;
+//     /* identical to box height, or 33px */
 
-    letter-spacing: 0.08em;
+//     letter-spacing: 0.08em;
 
-    color: $secondary-color;
+//     color: $secondary-color;
 
-    margin-bottom: 8px;
+//     margin-bottom: 8px;
 
-    @media screen and (min-width: 1680px) {
-            margin-bottom: 12px;
-        }
-}
+//     @media screen and (min-width: 1680px) {
+//             margin-bottom: 12px;
+//         }
+// }
 
 .about__text {
+    position: relative;
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
@@ -162,6 +159,25 @@
         line-height: 28px;
         margin-bottom: 20px;
     }
+}
+
+.about__text::before {
+    content: "—";
+    position: absolute;
+    top: -41px;
+    left: 0;
+    font-weight: 700;
+        font-size: 20px;
+        line-height: 164.9%;
+        /* identical to box height, or 33px */
+    
+        letter-spacing: 0.08em;
+    
+        color: $secondary-color;
+
+        @media screen and (min-width: 1680px) {
+                top: -45px;
+            }
 }
 
 .about__certificate {
