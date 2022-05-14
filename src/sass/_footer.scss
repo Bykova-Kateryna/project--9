@@ -11,6 +11,7 @@
     justify-content: center;
 
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .footer-logo__img{
@@ -40,13 +41,32 @@
     font-size: 14px;
     line-height: 1.21;
     letter-spacing: 0.08em;
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), font-size 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus{
+            color: $secondary-color;
+            font-size: 16px;
+        }
 }
 .footer-contact-list__number--img{
     margin-right: 8px;
 }
 
 .footer-contact-list__item--link{
-    display: inline-block;
+    display: inline-flex;
+    min-width: 40px;
+    min-height: 40px;
+    background: radial-gradient(110.28% 110.28% at 20.5% 87.39%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    
+        &:hover, &:focus{
+            background: linear-gradient(270deg, rgb(246, 249, 0), rgb(244, 14, 14), rgb(197, 67, 182) 100%);
+        }
 }
 
 .footer-copyright{
