@@ -15,14 +15,14 @@
     color: $background-color;
 }
 
-.contacts__title {
+.contacts__text {
     font-weight: 800;
     line-height: 1.3;
     letter-spacing: 0.03em;
     text-align: center;
 }
 
-.contact__description-wrapper {
+.contacts__description-wrapper {
     text-align: center;
     font-weight: 600;
     letter-spacing: 0.08em;
@@ -80,13 +80,13 @@
         padding-right: 20px;
     }
 
-    .contacts__title {
+    .contacts__text {
         margin-bottom: 24px;
 
         font-size: 14px;
     }
 
-    .contact__description-wrapper {
+    .contacts__description-wrapper {
         margin-bottom: 40px;
 
         font-size: 12px;
@@ -108,7 +108,7 @@
         // width: 768px;
     }
 
-    .contacts__title {
+    .contacts__text {
         margin-bottom: 40px;
     }
     .contact-form__input{
@@ -136,11 +136,11 @@
         padding-right: 40px;
     }
 
-    .contacts__title {
+    .contacts__text {
         font-size: 26px;
     }
 
-    .contact__description-wrapper {
+    .contacts__description-wrapper {
         margin-bottom: 24px;
         font-size: 14px;
         line-height: 1.21;
@@ -185,11 +185,11 @@
         padding-right: 295px;
     }
 
-    .contacts__title {
+    .contacts__text {
         font-size: 46px;
     }
 
-    .contact__description-wrapper {
+    .contacts__description-wrapper {
         margin-bottom: 60px;
         font-size: 30px;
         line-height: 1.23;
