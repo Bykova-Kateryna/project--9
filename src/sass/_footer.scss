@@ -1,34 +1,84 @@
 .footer{
-    background-image: linear-gradient(to bottom, $background-color 72.2%, $tittle-color 27.8%)
+    background-image: linear-gradient(to bottom, $background-color 72.2%, $tittle-color 27.8%);
+    
+    @media screen and (min-width: 768px) and (max-width: 1679px){
+        background-image: linear-gradient(to bottom, $background-color 61%, $tittle-color 39%);
+    } 
+
+    @media screen and (min-width: 1680px){
+        background-image: linear-gradient(to bottom, $background-color 71.7%, $tittle-color 28.3%);
+    }    
 }
 .footer-contact{
     padding-top: 40px;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) and (max-width: 1679px){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1680px) {
+        padding-top: 83px;
+        padding-bottom: 80px;
+        justify-content: flex-start;
+    }
 }
 
 .footer-logo{
     display: flex;
     justify-content: center;
 
-    margin-bottom: 20px;
     cursor: pointer;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
+    }
+    
+    @media screen and (min-width: 1680px) {
+        margin-right: 452px;
+    }
 }
 
 .footer-logo__img{
     width: 80px;
     height: 29px;
+
+    @media screen and (min-width: 768px) {
+        width: 128px;
+        height: 45px;
+    }
 }
 
 .footer-contact-list{
     @extend %ul;
     text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .footer-contact-list__item{
-    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 20px;
         &:last-child{
             margin-bottom: 0;
         }
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 24px;
+
+    &:last-child{
+        padding-left: 24px;
+        border-left: 1px solid $primary-color;
+        margin-right: 0;
+    }
+    }
+
+    @media screen and (min-width: 1680px){
+        margin-right: 16px;
+    }
 }
 
 .footer-contact-list__number{
@@ -48,9 +98,37 @@
             color: $secondary-color;
             font-size: 16px;
         }
+
+    @media screen and (min-width: 768px) and (max-width: 1679px) {
+        font-size: 20px;
+        line-height: 1.2;
+        &:hover, &:focus{
+            font-size: 22px;
+        }
+    }
+    @media screen and (min-width: 1680px) {
+        font-size: 30px;
+        line-height: 1.23;
+        &:hover, &:focus{
+            font-size: 32px;
+        }
+    }
 }
 .footer-contact-list__number--img{
+    width: 20px;
+    height: 19px;
     margin-right: 8px;
+
+    @media screen and (min-width: 768px) {
+        width: 32px;
+        height: 32px;
+    }
+
+    @media screen and (min-width: 1680px){
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+    }
 }
 
 .footer-contact-list__item--link{
@@ -66,6 +144,7 @@
     
         &:hover, &:focus{
             background: linear-gradient(270deg, rgb(246, 249, 0), rgb(244, 14, 14), rgb(197, 67, 182) 100%);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
 }
 
@@ -73,6 +152,11 @@
     padding-top: 24px;
     padding-bottom: 24px;
     text-align: center;
+
+    @media screen and (min-width: 1680px) {
+        padding-top: 26px;
+        padding-bottom: 27px;
+    }
 }
 
 .footer-copyright__text{
