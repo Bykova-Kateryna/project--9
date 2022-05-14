@@ -20,10 +20,7 @@
 
 .footer-contact-list{
     @extend %ul;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .footer-contact-list__item{
@@ -34,7 +31,7 @@
 }
 
 .footer-contact-list__number{
-    display: flex;
+    display: inline-flex;
     align-items: center;
 
     text-decoration: none;
@@ -46,6 +43,10 @@
 }
 .footer-contact-list__number--img{
     margin-right: 8px;
+}
+
+.footer-contact-list__item--link{
+    display: inline-block;
 }
 
 .footer-copyright{
