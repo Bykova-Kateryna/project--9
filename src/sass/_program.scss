@@ -15,7 +15,9 @@ p {
 .program {
     position: relative;
     background-color: $tittle-color;
-    padding: 40px 62px 105px 62px;
+    // padding: 40px 62px 105px 62px;
+    padding-top: 62px;
+    padding-bottom: 105px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,9 +110,11 @@ p {
 
 @media screen and (min-width: 768px) {
     .program {
-        padding: 60px 32px 100px 32px;
+        // padding: 60px 32px 100px 32px;
+        padding-top: 60px;
+        padding-bottom: 100px;
         align-items: start;
-        width: 768px;
+        // width: 768px;
 
         &-list {
             margin-left: 71px;
@@ -144,8 +148,10 @@ p {
 
 @media screen and (min-width: 1680px) {
     .program {
-        width: 1680px;
-        padding: 80px 16px 436px 16px;
+        // width: 1680px;
+        // padding: 80px 16px 436px 16px;
+        padding-top: 80px;
+        padding-bottom: 436px;
         
         &-title {
             font-size: 46px;
