@@ -1,0 +1,209 @@
+
+.about {
+    @extend %padding-for-section;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+        @media screen and (min-width: 1680px) {
+            padding-top: 80px;
+                padding-bottom: 120px;
+        }
+}
+
+.about__title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+    /* or 26px */
+    letter-spacing: 0.03em;
+
+    color: $tittle-color;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 46px;
+        margin-bottom: 80px;
+    }
+}
+
+.about__box {
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.about__description {
+    @media screen and (min-width: 768px) {
+        width: 400px;
+            margin-left: 60px;
+        }
+    
+        @media screen and (min-width: 1680px) {
+            width: 668px;
+            margin-left: 172px;
+        }
+}
+
+.about__name {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+
+    color: $tittle-color;
+    padding-bottom: 8px;
+    border-bottom: 1px solid $primary-color;
+
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767.98px) {
+        margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 30px;
+        line-height: 37px;
+        padding-bottom: 16px;
+        margin-bottom: 32px;
+    }
+}
+
+.about__list {
+    @extend %ul;
+    margin-bottom: 60px;
+    margin-left: 26px;
+
+    @media screen and (min-width: 1680px) {
+            margin-left: 60px;
+        }
+}
+
+
+.about__item {
+    display: flex;
+    align-items: center;
+    
+    
+    &:not(:last-child){
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+                margin-bottom: 34px;
+            }
+
+        @media screen and (min-width: 1680px) {
+                margin-bottom: 30px;
+            }
+    }
+}
+
+.about__paragraph {
+    position: relative;
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+    
+        color: $tittle-color;
+
+        @media screen and (min-width: 768px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        
+            @media screen and (min-width: 1680px) {
+                font-size: 16px;
+                line-height: 20px;
+}}
+
+.about__paragraph::before {
+    position: absolute;
+    top: 0;
+    left: -26px;
+    content: "";
+    // content: url(../svg/check.svg);
+    background-image: url(../svg/check.svg);
+    background-size: contain;
+    display: inline-block;
+    width: 17px;
+        height: 14px;
+    
+    
+        @media screen and (min-width: 1680px) {
+            left: -58px;
+            width: 24px;
+                height: 20px;
+        }
+}
+
+.about__thumb{
+    position: relative;
+
+    &::before {
+        content: "—";
+        position: absolute;
+        top: -41px;
+        left: 0;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 164.9%;
+        /* identical to box height, or 33px */
+        
+        letter-spacing: 0.08em;
+        
+        color: $secondary-color;
+
+        @media screen and (min-width: 1680px) {
+            top: -45px;
+        }
+    }
+
+    & > ul {
+        @extend %ul;
+    }
+}
+
+.about__text {
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* or 167% */
+
+    color: $primary-color;
+
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 10px;
+        line-height: 20px;
+        /* or 200% */
+    }
+
+    @media screen and (min-width: 1680px) {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+}
+
+.about__certificate {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    /* identical to box height, or 167% */
+
+    text-decoration-line: underline;
+
+    color: #ff6b09;
+
+    @media screen and (min-width: 1680px) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
