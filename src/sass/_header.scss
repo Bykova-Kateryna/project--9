@@ -121,6 +121,7 @@ a {
     left: 0;
     width: 100vw;
     height: 100vh;
+    padding-top: 0;
 
     background-color: rgba(17, 21, 24, 0.9);
     z-index: 200;
@@ -141,11 +142,11 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    padding-top: 20px;
+    margin-top: 20px;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 80px;
-        padding-top: 40px;
+        margin-top: 40px;
     }
 }
 
