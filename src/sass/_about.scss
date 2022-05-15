@@ -1,12 +1,13 @@
 
 .about {
-    @extend %padding-for-section;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 40px;
     padding-bottom: 40px;
 
         @media screen and (min-width: 1680px) {
             padding-top: 80px;
-                padding-bottom: 120px;
+            padding-bottom: 120px;
         }
 }
 
@@ -14,7 +15,6 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 130%;
-    /* or 26px */
     letter-spacing: 0.03em;
 
     color: $tittle-color;
@@ -126,7 +126,6 @@
     top: 0;
     left: -26px;
     content: "";
-    // content: url(../svg/check.svg);
     background-image: url(../svg/check.svg);
     background-size: contain;
     display: inline-block;
@@ -143,6 +142,7 @@
 
 .about__thumb{
     position: relative;
+    margin-bottom: 8px;
 
     &::before {
         content: "—";
@@ -151,9 +151,7 @@
         left: 0;
         font-weight: 700;
         font-size: 20px;
-        line-height: 164.9%;
-        /* identical to box height, or 33px */
-        
+        line-height: 33px;
         letter-spacing: 0.08em;
         
         color: $secondary-color;
@@ -177,7 +175,10 @@
 
     color: $primary-color;
 
-    margin-bottom: 8px;
+        &:not(:last-child ) {
+            margin-bottom: 8px;
+        }
+
 
     @media screen and (min-width: 768px) {
         font-size: 10px;
