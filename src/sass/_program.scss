@@ -1,0 +1,222 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.program {
+    position: relative;
+    background-color: $tittle-color;
+    padding: 40px 62px 105px 62px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-item:nth-child(-n + 4) {
+        margin-bottom: 40px;
+    }
+    &-sublist {
+        padding-left: 26px;
+    }
+    &-title {
+        color: $background-color;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 40px;
+    }
+    
+    &-subtitle {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        color: $background-color;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 200%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        padding-left: 26px;
+        margin-bottom: 10px;
+        // height: 12px;
+        
+        &::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-size: contain;
+        }
+        &::before {
+            position: absolute;
+            left: -6.5px;
+            margin-right: 20px;
+            background-image: url(../svg/Ellipse.svg);
+            z-index: 2;
+        }
+    }
+
+    &-subject {
+        color: $secondary-color;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 165%;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+    }
+
+    &-text {
+        color: $primary-color;
+        opacity: 0.5;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 167%;
+        letter-spacing: 0.08em;
+    }
+    &-clause:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &-list {
+        position: relative;
+        width: 202px;
+    }
+    &-line {
+        position: absolute;
+        top: 10px;
+        left: -1px;
+        height: 1240px;
+        width: 10px;
+        border-left: 1px solid $background-color;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .program {
+        padding: 60px 32px 100px 32px;
+        align-items: start;
+        width: 768px;
+
+        &-list {
+            margin-left: 71px;
+        }
+        &-sublist {
+            display: flex;
+        }
+        &-title {
+            font-size: 26px;
+        }
+        &-subtitle {
+            padding-left: 113px;
+        }
+        &-sublist {
+            padding-left: 113px;
+        }
+        &-line {
+            height: 750px;
+        }
+        &-clause {
+            width: 152px;
+        }
+        &-clause:not(:last-child) {
+            margin-bottom: 0px;
+            margin-right: 32px;
+        }&-text {
+            width: 152px;
+        }
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .program {
+        width: 1680px;
+        padding: 80px 16px 436px 16px;
+        
+        &-title {
+            font-size: 46px;
+            margin-bottom: 136px;
+        }
+        &-sublist {
+            display:contents;
+        } 
+        &-subtitle {
+            display: flex;
+            padding-left: 0;
+            font-size: 20px;
+            line-height: 140%;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            align-items: baseline;
+            &::before {
+                width: 14px;
+                height: 14px;
+            }
+            &::before {
+                position: absolute;
+                left: 0px;
+                top: -48px;
+                background-image: url(../svg/Ellipse.svg);
+                z-index: 2;
+            }
+
+            &::first-letter {
+                font-size: 40px;
+                color: brown;
+            }
+        }
+        &-first-letter {
+            font-size: 30px;
+            line-height: 93%;
+            margin-right: 10px;
+        }
+        img {
+            bottom: 70px;
+            left: 0;
+        }
+        &-list {
+            display: flex;
+            margin-left: 140px;
+        }
+        &-line {
+            top: -42px;
+            left: -156px;
+            height: 1px;
+            width: 1680px;
+            border-top: 1px solid $background-color;
+        }
+        &-clause {
+            width: 240px;
+        }
+        &-clause:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 24px;
+        }
+        &-subject {
+            font-size: 20px;
+        }
+        &-text {
+            width: 240px;
+            font-size: 18px;
+            line-height: 156%; 
+        }
+        &-item:nth-child(-n + 4) {
+            margin-bottom: 0px;
+            margin-right: 40px;
+        }
+    }
+}
