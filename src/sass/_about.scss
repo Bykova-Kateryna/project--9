@@ -13,8 +13,7 @@
 .about__title {
     font-weight: 800;
     font-size: 20px;
-    line-height: 130%;
-    /* or 26px */
+    line-height: 26px;
     letter-spacing: 0.03em;
 
     color: $tittle-color;
@@ -40,7 +39,7 @@
 .about__description {
     @media screen and (min-width: 768px) {
         width: 400px;
-            margin-left: 60px;
+        margin-left: 60px;
         }
     
         @media screen and (min-width: 1680px) {
@@ -126,18 +125,17 @@
     top: 0;
     left: -26px;
     content: "";
-    // content: url(../svg/check.svg);
     background-image: url(../svg/check.svg);
     background-size: contain;
     display: inline-block;
     width: 17px;
-        height: 14px;
+    height: 14px;
     
     
         @media screen and (min-width: 1680px) {
             left: -58px;
             width: 24px;
-                height: 20px;
+            height: 20px;
         }
 }
 
@@ -151,8 +149,7 @@
         left: 0;
         font-weight: 700;
         font-size: 20px;
-        line-height: 164.9%;
-        /* identical to box height, or 33px */
+        line-height: 33px;
         
         letter-spacing: 0.08em;
         
@@ -173,7 +170,6 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
-    /* or 167% */
 
     color: $primary-color;
 
@@ -182,7 +178,6 @@
     @media screen and (min-width: 768px) {
         font-size: 10px;
         line-height: 20px;
-        /* or 200% */
     }
 
     @media screen and (min-width: 1680px) {
@@ -196,7 +191,6 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 20px;
-    /* identical to box height, or 167% */
 
     text-decoration-line: underline;
 
