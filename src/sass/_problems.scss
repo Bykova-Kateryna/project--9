@@ -1,0 +1,121 @@
+.problems {
+    padding-top: 24px;
+    background: linear-gradient(to bottom, #111518 75%, white 25%);
+}
+.problems__title-element {
+    color: $secondary-color;
+}
+.problems__title {
+    font-size: 24px;
+    line-height: 1.29;
+    letter-spacing: 0.03em;
+    color: white;
+}
+.problems__item-text {
+    font-weight: 700;
+    font-size: $main-font-size;
+    line-height: 1.43;
+    letter-spacing: 0.08em;
+    color: #111518;
+}
+.problems__wrapper {
+    display: grid;
+    grid-auto-rows: minmax(auto, auto);
+    background-color: $background-color;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.problems__item {
+    
+    counter-increment: number;
+    &:before {
+        content: "— " counter(number, decimal-leading-zero);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.08em;
+        color: $secondary-color;
+    }  
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 767px) {
+    .problems__title {
+        margin-bottom: 24px;
+    }
+    .problems__wrapper {
+        padding-top: 20px;
+        padding-bottom: 24px;
+        padding-left: 33px;
+        padding-right: 32px;
+        margin-bottom: 40px;
+        grid-row-gap: 16px;
+    }
+    .problems__item-text {
+        margin-top: 5px;
+    }
+    .problems__icon {
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .problems__title {
+        max-width: 57%;
+        margin-bottom: 25px;
+    }
+    .problems {
+        padding-top: 25px;
+    }
+    .problems__item {
+        margin-bottom: 24px;
+        margin-right: 20px;
+    }
+    .problems__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 80px;
+        padding-right: 143px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        grid-row-gap: 8px;
+        grid-column-gap: 49px;
+        margin-bottom: 40px;
+    }
+    .problems__item-text {
+        margin-top: 4px;
+    }
+    .problems__icon {
+        display: none;
+    }
+}  
+@media screen and (min-width: 1680px) {
+    .problems {
+        background-position: right;
+        position: relative;
+        padding-top: 24px;
+        background: no-repeat url("../svg/fire_bg_problems.svg") right, linear-gradient(to bottom, #111518 75%, white 25%);
+    }
+    .problems__title {
+        max-width: 50%;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        font-weight: 800;
+        font-size: 46px;
+        line-height: 1.3;
+
+    }
+    .problems__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 40px;
+        grid-column-gap: auto;
+        padding-left: 140px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+ }
+ .problems__item-text {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 8px;
+ }
+ 
+}
