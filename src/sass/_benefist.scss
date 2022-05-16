@@ -10,14 +10,12 @@
 
 .benefits__wrapper {
     display: grid;
-   // grid-template-columns: repeat(3, 1fr);
-   // grid-auto-rows: minmax(auto, auto);
     background: #FFFFFF;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 .benefits__wrapper-item-text {
     font-weight: 700;
-    font-size: 14px;
+    font-size: $main-font-size;
     line-height: 1.43;
     letter-spacing: 0.08em;
     color: #111518;
@@ -93,15 +91,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(auto, auto);
+        grid-row-gap: 44px;
+        grid-column-gap: 32px;
     }
-    .benefits__wrapper-item:nth-child(-n+4) {
+    /*.benefits__wrapper-item:nth-child(-n+4) {
         margin-bottom: 44px;
     }
     .benefits__wrapper-item:nth-child(odd) {
         margin-right: 32px;
-    }
+    } */
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1680px) {
     .benefits__title {
         display: none;
     }
@@ -109,22 +109,39 @@
         padding-top: 0;
     }
     .benefits__container {
-        width: 1366px;
-       
-        padding-left: 15px;
-        padding-right: 15px;
+        width: 1680px;
+        padding-left: 4px;
+        padding-right: 26px;
     }
     .benefits__wrapper-item-text {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
+        margin-top: 8px;
+        
     }
     .benefits__wrapper {
-        margin-left: 16px;
-        margin-right: 16px;
-        padding: 60px 92px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 140px;
+        padding-right: 32px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 356px);
         grid-auto-rows: minmax(auto, auto);
+        grid-column-gap: 204px;
+        grid-row-gap: 72px;
     }
+   // .benefits__wrapper-item:nth-child(-n+3) {
+   //     margin-bottom: 40px;
+   // }
+    
+   // .benefits__wrapper-item:nth-last-child(n+2) {
+    //    margin-right: 54px;
+   // }
+  //  .benefits__wrapper-item {
+  //      width: 356px;
+   // }
+   // .benefits__wrapper-item:nth-child(3n+3) {
+   //     margin-left: 32px;
+   // }
 }
