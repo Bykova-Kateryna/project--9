@@ -1,3 +1,11 @@
+.how-we-do{
+  padding-bottom: 40px;
+
+    @media screen and (min-width: 1680px){
+      padding-bottom: 80px;
+    }
+}
+
 .how-we-do__list {
   @extend %ul;
 }
