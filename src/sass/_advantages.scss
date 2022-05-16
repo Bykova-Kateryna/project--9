@@ -1,9 +1,9 @@
 .advantages {
-    background: rgba(0, 0, 0, 0.04);
     padding: 40px 0 45px;
 
     @media screen and (min-width: 768px) {
-        padding: 40px 0 80px;
+        padding-bottom: 80px;
+        padding-top: 0;
     }
 }
 
