@@ -179,16 +179,10 @@ p {
                 background-image: url(../svg/Ellipse.svg);
                 z-index: 2;
             }
-
-            &::first-letter {
-                font-size: 40px;
-                color: brown;
-            }
         }
         &-first-letter {
             font-size: 30px;
             line-height: 93%;
-            margin-right: 10px;
         }
         &-photo {
             bottom: 70px;
