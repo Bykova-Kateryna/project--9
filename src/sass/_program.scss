@@ -87,7 +87,7 @@ p {
     &-clause:not(:last-child) {
         margin-bottom: 10px;
     }
-    img {
+    &-photo {
         display: block;
         position: absolute;
         bottom: 0;
@@ -190,7 +190,7 @@ p {
             line-height: 93%;
             margin-right: 10px;
         }
-        img {
+        &-fhoto {
             bottom: 70px;
             left: 0;
         }
