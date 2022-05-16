@@ -1,6 +1,4 @@
 .about {
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 40px;
     padding-bottom: 40px;
 
@@ -29,6 +27,16 @@
         margin-bottom: 80px;
     }
 }
+
+.about__img {
+    width: 243px;
+        
+        @media screen and (min-width: 1680px) {
+            width: 528px;
+        }
+
+}
+
 
 .about__box {
     @media screen and (min-width: 768px) {
