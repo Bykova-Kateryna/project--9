@@ -1,16 +1,10 @@
 .benefits {
-    @extend %padding-for-section;
     background: linear-gradient(to bottom, #111518 70%, white 30%);
 }
-.benefits__container {
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
 .benefits__wrapper {
     display: grid;
-    background: #FFFFFF;
+    grid-auto-rows: minmax(auto, auto);
+    background: $background-color;
     box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
 .benefits__wrapper-item-text {
@@ -19,7 +13,6 @@
     line-height: 1.43;
     letter-spacing: 0.08em;
     color: #111518;
-    
 }
 
 .benefits__wrapper-item {
@@ -36,12 +29,6 @@
 @media screen and (max-width: 767px) {
     .benefits {
         padding-top: 40px;
-
-    }
-    .benefits__container {
-        width: 480px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
     .benefits__title {
         max-width: 50%;
@@ -51,8 +38,7 @@
         letter-spacing: 0.03em;
         color: #FFFFFF;
         margin-bottom: 32px;
-    }
-        
+    } 
     .benefits__wrapper {
         padding-left: 20px;
         padding-right: 24px;
@@ -65,11 +51,6 @@
     
 }
 @media screen and (min-width: 768px) {
-    .benefits__container {
-        width: 768px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
     .benefits__title {
         max-width: 100%;
         text-align: center;
@@ -88,18 +69,11 @@
     }
     .benefits__wrapper {
         padding: 40px 92px;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(auto, auto);
+        
         grid-row-gap: 44px;
         grid-column-gap: 32px;
     }
-    /*.benefits__wrapper-item:nth-child(-n+4) {
-        margin-bottom: 44px;
-    }
-    .benefits__wrapper-item:nth-child(odd) {
-        margin-right: 32px;
-    } */
 }
 @media screen and (min-width: 1680px) {
     .benefits__title {
@@ -108,40 +82,19 @@
     .benefits {
         padding-top: 0;
     }
-    .benefits__container {
-        width: 1680px;
-        padding-left: 4px;
-        padding-right: 26px;
-    }
     .benefits__wrapper-item-text {
         font-weight: 700;
         font-size: 20px;
         line-height: 1.2;
         margin-top: 8px;
-        
     }
     .benefits__wrapper {
         padding-top: 60px;
         padding-bottom: 60px;
         padding-left: 140px;
         padding-right: 32px;
-        display: grid;
         grid-template-columns: repeat(3, 356px);
-        grid-auto-rows: minmax(auto, auto);
         grid-column-gap: 204px;
         grid-row-gap: 72px;
     }
-   // .benefits__wrapper-item:nth-child(-n+3) {
-   //     margin-bottom: 40px;
-   // }
-    
-   // .benefits__wrapper-item:nth-last-child(n+2) {
-    //    margin-right: 54px;
-   // }
-  //  .benefits__wrapper-item {
-  //      width: 356px;
-   // }
-   // .benefits__wrapper-item:nth-child(3n+3) {
-   //     margin-left: 32px;
-   // }
 }

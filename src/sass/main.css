@@ -32,27 +32,6 @@ p {
   list-style: none;
 }
 
-@media screen and (max-width: 767px) {
-  .benefits {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1365) {
-  .benefits {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  .benefits {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -760,14 +739,10 @@ a {
   background: linear-gradient(to bottom, #111518 70%, white 30%);
 }
 
-.benefits__container {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .benefits__wrapper {
   display: -ms-grid;
   display: grid;
+  grid-auto-rows: minmax(auto, auto);
   background: #FFFFFF;
   -webkit-box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
           box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
@@ -798,11 +773,6 @@ a {
   .benefits {
     padding-top: 40px;
   }
-  .benefits__container {
-    width: 480px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   .benefits__title {
     max-width: 50%;
     font-weight: 800;
@@ -824,11 +794,6 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .benefits__container {
-    width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   .benefits__title {
     max-width: 100%;
     text-align: center;
@@ -847,20 +812,11 @@ a {
   }
   .benefits__wrapper {
     padding: 40px 92px;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(auto, auto);
     grid-row-gap: 44px;
     grid-column-gap: 32px;
   }
-  /*.benefits__wrapper-item:nth-child(-n+4) {
-        margin-bottom: 44px;
-    }
-    .benefits__wrapper-item:nth-child(odd) {
-        margin-right: 32px;
-    } */
 }
 
 @media screen and (min-width: 1680px) {
@@ -869,11 +825,6 @@ a {
   }
   .benefits {
     padding-top: 0;
-  }
-  .benefits__container {
-    width: 1680px;
-    padding-left: 4px;
-    padding-right: 26px;
   }
   .benefits__wrapper-item-text {
     font-weight: 700;
@@ -886,11 +837,8 @@ a {
     padding-bottom: 60px;
     padding-left: 140px;
     padding-right: 32px;
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: (356px)[3];
         grid-template-columns: repeat(3, 356px);
-    grid-auto-rows: minmax(auto, auto);
     grid-column-gap: 204px;
     grid-row-gap: 72px;
   }
