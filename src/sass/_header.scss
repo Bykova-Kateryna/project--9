@@ -26,9 +26,11 @@ a {
 
 .logo {
     display: block;
+    line-height: 0;
 }
 
 .logo__icon {
+
     @media screen and (min-width: 768px) {
         width: 128px;
         height: 45px;
@@ -54,6 +56,8 @@ a {
 }
 
 .main-nav__link {
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.2;
@@ -129,6 +133,7 @@ a {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms ease-in;
+    transition: visibility 250ms ease-in;
 
     &.is-open {
         opacity: 1;
@@ -136,6 +141,7 @@ a {
         pointer-events: auto;
     }
 }
+
 
 .menu-open__head {
     display: flex;
@@ -196,20 +202,33 @@ a {
 }
 
 .menu-open__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
     line-height: 0;
-    background: transparent;
-    border: none;
+    background-color: $secondary-color;
+    border-radius: 50%;
     cursor: pointer;
-    transition: stroke 250ms ease-in;
+    transition: background-color 250ms ease-in;
 
-    &:hover>.menu-open__icon-close,
-    &:focus>.menu-open__icon-close {
-        stroke: $secondary-color;
+    &:hover,
+    &:focus {
+        background-color: $background-color;
     }
+
 }
 
 .menu-open__icon-close {
     stroke: #FFFFFF;
+    transition: stroke 250ms ease-in;
+
+    &:hover>.menu-open__icon-close,
+    &:focus>.menu-open__icon-close {
+
+        stroke: $secondary-color;
+    }
 }
 
 .menu-open__btn-consultation {
