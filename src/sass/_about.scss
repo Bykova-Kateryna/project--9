@@ -1,6 +1,8 @@
 .about {
     padding-top: 40px;
     padding-bottom: 40px;
+    padding-left: 0;
+    padding-right: 0;
 
     @media screen and (min-width: 1680px) {
         padding-top: 80px;
@@ -30,13 +32,15 @@
 
 .about__img {
     width: 243px;
+
+    @media screen and (max-width: 767.98px) {
+            margin-bottom: 20px;
+        }
         
         @media screen and (min-width: 1680px) {
             width: 528px;
         }
-
 }
-
 
 .about__box {
     @media screen and (min-width: 768px) {
@@ -67,10 +71,9 @@
     border-bottom: 1px solid $primary-color;
 
     margin-bottom: 20px;
+    margin-top: 0;
 
-    @media screen and (max-width: 767.98px) {
-        margin-top: 20px;
-    }
+    
 
     @media screen and (min-width: 1680px) {
         font-size: 30px;
@@ -185,6 +188,10 @@
 
     &:not(:last-child) {
         margin-bottom: 8px;
+    }
+
+    &:last-child {
+        margin-bottom: 0px;
     }
 
 
