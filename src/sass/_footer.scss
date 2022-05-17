@@ -1,4 +1,5 @@
 .footer{
+    padding-top: 40px;
     background-image: linear-gradient(to bottom, $background-color 72.2%, $tittle-color 27.8%);
     
     @media screen and (min-width: 768px) and (max-width: 1679px){
@@ -6,13 +7,13 @@
     } 
 
     @media screen and (min-width: 1680px){
+        padding-top: 83px;
         background-image: linear-gradient(to bottom, $background-color 71.7%, $tittle-color 28.3%);
     }    
 }
 
 
 .footer-contact{
-    padding-top: 40px;
     padding-bottom: 40px;
 
     @media screen and (min-width: 768px) and (max-width: 1679px){
@@ -22,7 +23,6 @@
 
     @media screen and (min-width: 1680px) {
         display: flex;
-        padding-top: 83px;
         padding-bottom: 80px;
         justify-content: flex-start;
     }
