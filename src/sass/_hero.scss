@@ -95,12 +95,12 @@
 }
 
 .main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @include button (280px, 48px, $secondary-color, $background-color);
     margin-bottom: 50px;
-    margin-right: auto;
-    margin-left: auto;
     padding: 0;
-    display: block;
 
     @media screen and (min-width: 768px) {
         margin: 0 0;
@@ -109,6 +109,7 @@
 
     @media screen and (min-width: 1680px) {
         @include button (354px, 70px, $secondary-color, $background-color);
+        font-size: 14px;
     }
 }
 
