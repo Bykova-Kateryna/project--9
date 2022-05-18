@@ -1,21 +1,6 @@
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-h2,
-h3,
-h4,
-p {
-    margin: 0;
-    padding: 0;
-}
-
 .program {
     position: relative;
     background-color: $tittle-color;
-    // padding: 40px 62px 105px 62px;
     padding-top: 62px;
     padding-bottom: 105px;
     display: flex;
@@ -50,7 +35,6 @@ p {
         text-transform: uppercase;
         padding-left: 26px;
         margin-bottom: 10px;
-        // height: 12px;
         
         &::before {
             content: "";
@@ -110,11 +94,9 @@ p {
 
 @media screen and (min-width: 768px) {
     .program {
-        // padding: 60px 32px 100px 32px;
         padding-top: 60px;
         padding-bottom: 100px;
         align-items: start;
-        // width: 768px;
 
         &-list {
             margin-left: 71px;
@@ -148,8 +130,6 @@ p {
 
 @media screen and (min-width: 1680px) {
     .program {
-        // width: 1680px;
-        // padding: 80px 16px 436px 16px;
         padding-top: 80px;
         padding-bottom: 436px;
         
@@ -183,6 +163,7 @@ p {
         &-first-letter {
             font-size: 30px;
             line-height: 93%;
+            margin-right: 0;
         }
         &-photo {
             bottom: 70px;
