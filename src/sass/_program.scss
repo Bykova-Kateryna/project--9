@@ -1,12 +1,33 @@
 .program {
-    position: relative;
+    // position: relative;
     background-color: $tittle-color;
     padding-top: 62px;
     padding-bottom: 105px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 0;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1680px) {
+        width: 1680px;
+    }
+    
+    &-container {
+        display: flex;
+            flex-direction: column;
+            align-items: center;
+    }
     &-item:nth-child(-n + 4) {
         margin-bottom: 40px;
     }
@@ -96,8 +117,11 @@
     .program {
         padding-top: 60px;
         padding-bottom: 100px;
-        align-items: start;
+        
 
+        &-container {
+            align-items: start;
+        }
         &-list {
             margin-left: 71px;
         }
