@@ -1,5 +1,6 @@
 .benefits {
-    background: linear-gradient(to bottom, #111518 70%, white 30%);
+    position: relative;
+    margin-top: -190px;
 }
 .benefits__wrapper {
     display: grid;
@@ -64,7 +65,6 @@
     }
     .benefits {
         padding-top: 40px;
-        background: linear-gradient(to bottom, #111518 50%, white 50%);
     }
     .benefits__wrapper {
         padding: 40px 92px;
