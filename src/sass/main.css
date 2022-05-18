@@ -383,6 +383,7 @@ a {
 
 .logo {
   display: block;
+  line-height: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -414,6 +415,8 @@ a {
 }
 
 .main-nav__link {
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
@@ -504,6 +507,8 @@ a {
   pointer-events: none;
   -webkit-transition: opacity 250ms ease-in;
   transition: opacity 250ms ease-in;
+  -webkit-transition: visibility 250ms ease-in;
+  transition: visibility 250ms ease-in;
 }
 
 .menu-open.is-open {
@@ -578,21 +583,38 @@ a {
 }
 
 .menu-open__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25px;
+  height: 25px;
   line-height: 0;
-  background: transparent;
-  border: none;
+  background-color: #FF6B09;
+  border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: stroke 250ms ease-in;
-  transition: stroke 250ms ease-in;
+  -webkit-transition: background-color 250ms ease-in;
+  transition: background-color 250ms ease-in;
 }
 
-.menu-open__btn:hover > .menu-open__icon-close,
-.menu-open__btn:focus > .menu-open__icon-close {
-  stroke: #FF6B09;
+.menu-open__btn:hover, .menu-open__btn:focus {
+  background-color: #FFFFFF;
 }
 
 .menu-open__icon-close {
   stroke: #ffffff;
+  -webkit-transition: stroke 250ms ease-in;
+  transition: stroke 250ms ease-in;
+}
+
+.menu-open__icon-close:hover > .menu-open__icon-close,
+.menu-open__icon-close:focus > .menu-open__icon-close {
+  stroke: #FF6B09;
 }
 
 .menu-open__btn-consultation {
@@ -980,7 +1002,7 @@ a {
 }
 
 .problems__item:before {
-  content: "— " counter(number, decimal-leading-zero);
+  content: “— ” counter(number, decimal-leading-zero);
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
@@ -1051,8 +1073,8 @@ a {
     position: relative;
   }
   .problems__container {
-    background: no-repeat url("../svg/fire_bg_problems.svg") right, -webkit-gradient(linear, left top, left bottom, color-stop(75%, #111518), color-stop(25%, white));
-    background: no-repeat url("../svg/fire_bg_problems.svg") right, linear-gradient(to bottom, #111518 75%, white 25%);
+    background: no-repeat url("/svg/fire_bg_problems.svg") right, -webkit-gradient(linear, left top, left bottom, color-stop(75%, #111518), color-stop(25%, white));
+    background: no-repeat url("/svg/fire_bg_problems.svg") right, linear-gradient(to bottom, #111518 75%, white 25%);
     padding-top: 80px;
   }
   .problems__title {
@@ -1528,11 +1550,6 @@ a {
   }
 }
 
-.benefits {
-  position: relative;
-  margin-top: -190px;
-}
-
 .benefits__wrapper {
   display: -ms-grid;
   display: grid;
@@ -1563,7 +1580,7 @@ a {
   color: #FF6B09;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .benefits {
     padding-top: 40px;
   }
@@ -1612,6 +1629,10 @@ a {
 }
 
 @media screen and (min-width: 1680px) {
+  .benefits {
+    position: relative;
+    margin-top: -190px;
+  }
   .benefits__title {
     display: none;
   }
