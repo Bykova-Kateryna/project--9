@@ -1,5 +1,18 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+    padding: 0;
+}
 .program {
-    // position: relative;
+    position: relative;
     background-color: $tittle-color;
     padding-top: 62px;
     padding-bottom: 105px;
