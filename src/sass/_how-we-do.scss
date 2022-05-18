@@ -1,9 +1,9 @@
-.how-we-do{
+.how-we-do {
   padding-bottom: 40px;
 
-    @media screen and (min-width: 1680px){
-      padding-bottom: 80px;
-    }
+  @media screen and (min-width: 1680px) {
+    padding-bottom: 80px;
+  }
 }
 
 .how-we-do__list {
@@ -94,7 +94,6 @@
   line-height: 1.67;
   padding-left: 4px;
   padding-right: 4px;
-
   text-align: center;
   letter-spacing: 0.08em;
   color: $primary-color;
