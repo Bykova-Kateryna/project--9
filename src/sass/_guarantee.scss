@@ -8,11 +8,10 @@
 .guarantee__item {
     position: relative;
     padding-left: 28px;
-}
 
-.guarantee__item:not(:last-child) {
+&:not(:last-child) {
     border-left: 1px dashed $primary-color;
-    padding-bottom: 24px;
+    padding-bottom: 24px;}
 }
 
 .guarantee__list {
@@ -23,7 +22,6 @@
     font-size: 12px;
     line-height: 1.66;
     @extend %ul;
-    background-color: $background-secondary-color;
 }
 
 .guarantee__title {
@@ -37,17 +35,25 @@
 
 .guarantee__important {
     color: $secondary-color;
+    font-weight: normal;
+}
+
+.common-list {
+    background-color: $background-secondary-color;
+    
 }
 
 @media screen and (max-width: 480px) {
-    .container--fire {
-        background-color: $background-secondary-color;
+    .common-list {
         padding-left: 30px;
+        
     }
-
+.container--guarant {
+    padding: 0px;
+}
     .guarantee__list {
         padding-left: 0px;
-        padding-right: 0px;
+        padding-right: 15px;
     }
 }
 
@@ -61,9 +67,8 @@
         padding-right: 58px;
     }
 
-    .container--fire {
-        padding-left: 15px;
-        background-color: transparent;
+    .common-list {
+        padding-left: 0px;
     }
 
     .guarantee__item {
