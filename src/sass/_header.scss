@@ -26,6 +26,7 @@ a {
 
 .logo {
   display: block;
+  line-height: 0;
 }
 
 .logo__icon {
@@ -54,6 +55,8 @@ a {
 }
 
 .main-nav__link {
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;

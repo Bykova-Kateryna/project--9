@@ -12,6 +12,7 @@
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms ease-in;
+    transition: visibility 250ms ease-in;
 
     &.is-open {
         opacity: 1;
@@ -76,20 +77,32 @@
 }
 
 .menu-open__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
     line-height: 0;
-    background: transparent;
-    border: none;
+    background-color: $secondary-color;
+    border-radius: 50%;
     cursor: pointer;
-    transition: stroke 250ms ease-in;
+    transition: background-color 250ms ease-in;
 
-    &:hover>.menu-open__icon-close,
-    &:focus>.menu-open__icon-close {
-        stroke: $secondary-color;
+    &:hover,
+    &:focus {
+        background-color: $background-color;
     }
 }
 
 .menu-open__icon-close {
     stroke: #ffffff;
+    transition: stroke 250ms ease-in;
+
+    &:hover>.menu-open__icon-close,
+    &:focus>.menu-open__icon-close {
+
+        stroke: $secondary-color;
+    }
 }
 
 .menu-open__btn-consultation {
