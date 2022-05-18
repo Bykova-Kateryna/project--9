@@ -1,4 +1,5 @@
-.problems__container {
+.problems {
+    padding-top: 24px;
     background: linear-gradient(to bottom, #111518 75%, white 25%);
   }
   .problems__title-element {
@@ -36,11 +37,8 @@
     &:last-child {
       margin-bottom: 0;
     }
-  }
-  @media screen and (max-width: 767.98px) {
-    .problems__container {
-      padding-top: 24px;
-    }
+}
+@media screen and (max-width: 767px) {
     .problems__title {
       margin-bottom: 24px;
     }
@@ -58,20 +56,24 @@
     .problems__icon {
       display: none;
     }
+
   }
   @media screen and (min-width: 768px) {
     .problems__container {
       padding-top: 40px;
     }
+
     .problems__title {
       max-width: 57%;
       margin-bottom: 25px;
     }
+
     .problems__item {
       margin-bottom: 24px;
       margin-right: 20px;
     }
     .problems__wrapper {
+
       grid-template-columns: repeat(2, 1fr);
       padding-left: 80px;
       padding-right: 143px;
@@ -79,6 +81,7 @@
       padding-bottom: 32px;
       grid-row-gap: 8px;
       grid-column-gap: 49px;
+
     }
     .problems__item-text {
       margin-top: 4px;
@@ -89,6 +92,7 @@
   }
   @media screen and (min-width: 1680px) {
     .problems {
+
       background-position: right;
       position: relative;
     }
@@ -104,6 +108,7 @@
       font-weight: 800;
       font-size: 46px;
       line-height: 1.3;
+
     }
     .problems__wrapper {
       grid-template-columns: repeat(3, 1fr);
@@ -117,6 +122,7 @@
     font-size: 20px;
     line-height: 1.2;
     margin-top: 8px;
+
    }
   }
-  
+
