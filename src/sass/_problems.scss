@@ -1,6 +1,6 @@
 
-.problems__container {
-  background: linear-gradient(to bottom, #111518 75%, white 25%);
+.problems {
+  background: linear-gradient(to bottom, #111518 75%, #fff 25%);
 }
 .problems__title-element {
   color: $secondary-color;
@@ -44,7 +44,7 @@
 }
 @media screen and (max-width: 767.98px) {
 
-  .problems__container {
+  .problems {
       padding-top: 24px;
   }
   .problems__title {
@@ -68,8 +68,10 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .problems__container {
+
+  .problems {
       padding-top: 40px;
+      padding-bottom: 40px;
 
   }
   .problems__title {

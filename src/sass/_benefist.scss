@@ -1,3 +1,6 @@
+.benefits{
+    background-image: linear-gradient(to bottom, $tittle-color 65%, $background-color 35%);
+}
 .benefits__wrapper {
   display: grid;
   grid-auto-rows: minmax(auto, auto);
@@ -27,7 +30,7 @@
       padding-top: 40px;
   }
   .benefits__title {
-      max-width: 50%;
+      max-width: 70%;
       font-weight: 800;
       font-size: 20px;
       line-height: 1.35;
@@ -60,7 +63,8 @@
      
   }
   .benefits {
-      padding-top: 40px;
+    background-image: linear-gradient(to bottom, $tittle-color 50%, $background-color 50%);
+    padding-top: 80px;
   }
   .benefits__wrapper {
       padding: 40px 92px;
@@ -72,6 +76,7 @@
 }
 @media screen and (min-width: 1680px) {
   .benefits {
+      background-image: linear-gradient(to bottom, $tittle-color 52%, $background-color 47%);
       position: relative;
       margin-top: -190px;
   }
