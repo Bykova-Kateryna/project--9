@@ -1,5 +1,5 @@
 .backdrop {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -7,6 +7,7 @@
   z-index: 201;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-hidden {
@@ -21,7 +22,7 @@
 }
 
 .modal {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -194,11 +195,14 @@
   }
 }
 
-@media screen and (min-width: 1679px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 528px;
     height: 581px;
   }
+}
+
+@media screen and (min-width: 1679px) {
   .form-description {
     line-height: 1.15;
   }

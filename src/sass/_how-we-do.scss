@@ -26,10 +26,11 @@
   flex-direction: column;
   align-items: center;
   min-width: 280px;
-  height: 280px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 32px;
   padding-left: 4px;
+  padding-bottom: 4px;
   padding-right: 4px;
   background-color: $background-color;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
@@ -43,7 +44,7 @@
 
 .how-we-do__icon {
   fill: $secondary-color;
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 20px;
   transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -87,14 +88,15 @@
   }
 }
 
+.how-we-do__text_wrapper {
+  text-align: center;
+}
+
 .how-we-do__text {
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.67;
-  padding-left: 4px;
-  padding-right: 4px;
-  text-align: center;
   letter-spacing: 0.08em;
 
   color: $primary-color;
@@ -122,14 +124,15 @@
   .how-we-do__item {
     margin-left: 32px;
     margin-bottom: 24px;
+    padding-top: 40px;
     padding-left: 22px;
+    padding-bottom: 22px;
     padding-right: 22px;
     width: calc((100% - 2 * 32px) / 2);
-    height: 336px;
   }
 
   .how-we-do__icon {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 32px;
   }
 
@@ -159,14 +162,15 @@
   .how-we-do__item {
     margin-left: 32px;
     margin-bottom: 32px;
+    padding-top: 90px;
     padding-left: 82px;
+    padding-bottom: 91px;
     padding-right: 82px;
     width: calc((100% - 3 * 32px) / 3);
-    height: 492px;
   }
 
   .how-we-do__icon {
-    margin-top: 90px;
+    margin-top: 0;
   }
 
   .how-we-do__list_title {
